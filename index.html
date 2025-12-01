@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт под ключ Москвы и МО - Профессиональный ремонт квартир под ключ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>A-X Group</h2>
+                <span>Ваш надежный ремонт</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#process">Как мы работаем</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            
+            <div class="header-contacts">
+                <a href="tel:+78005005555" class="phone">+7 (988) 755-15-82</a>
+                <button class="callback-btn">Заказать звонок</button>
+            </div>
+            
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="main" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Профессиональный ремонт квартир в Москве и Московской Облости</h1>
+                <p class="hero-subtitle">Превращаем вашу квартиру в современное и комфортное пространство с гарантией качества 3 года</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Сроки от 14 дней</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruble-sign"></i>
+                        <span>Фиксированная цена</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Гарантия 3 года</span>
+                    </div>
+                </div>
+                <button class="cta-button">Рассчитать стоимость ремонта</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нашей компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A-X Group - ваш надежный партнер в ремонте</h3>
+                    <p>Мы занимаемся профессиональным ремонтом квартир, домов и коммерческих помещений уже более 5 лет. Наша команда - это опытные специалисты, которые превращают ваши идеи в реальность.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Более 100 успешных проектов</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Команда из 25 профессионалов</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Современные технологии и материалы</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Гарантия на все виды работ</span>
+                        </div>
+                    </div>
+                    
+                    <p>Мы ценим доверие наших клиентов и стремимся к долгосрочному сотрудничеству. Каждый проект для нас - это возможность создать что-то уникальное и качественное.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-text">лет на рынке</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-text">выполненных проектов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-text">профессиональных бригад</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-text">довольных клиентов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Form -->
+    <section class="consultation">
+        <div class="container">
+            <div class="consultation-form">
+                <h2>Получите бесплатную консультацию и расчет стоимости</h2>
+                <form class="consultation-form-content" action="https://formspree.io/f/mnnlzaan" method="POST">
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта ProRemont">
+                    <input type="hidden" name="_language" value="ru">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-row">
+                        <select name="repair_type" required>
+                            <option value="" disabled selected>Тип ремонта</option>
+                            <option value="capital">Капитальный</option>
+                            <option value="euro">Евроремонт</option>
+                            <option value="designer">Дизайнерский</option>
+                            <option value="cott">Ремонт коттеджей</option>
+                            <option value="commercial">Ремонт нежилых помещений</option>
+                        </select>
+                        <select name="area" required>
+                            <option value="" disabled selected>Площадь помещения</option>
+                            <option value="30">до 30 м²</option>
+                            <option value="50">30-50 м²</option>
+                            <option value="80">50-80 м²</option>
+                            <option value="100">80-100 м²</option>
+                            <option value="100+">свыше 100 м²</option>
+                        </select>
+                    </div>
+                    <div class="form-row single">
+                        <select name="materials" required>
+                            <option value="" disabled selected>Нужны ли материалы</option>
+                            <option value="with_materials">Да, с материалами</option>
+                            <option value="without_materials">Нет, без материалов</option>
+                            <option value="consult">Нужна консультация</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Получить расчет</button>
+                    <p class="form-note">Наш менеджер свяжется с вами в течение 15 минут</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Евроремонт</h3>
+                    <p>Комплексный подход к обновлению жилых и коммерческих помещений</p>
+                    <ul>
+                        <li>Замена электрической проводки</li>
+                        <li>Замена сантехнических труб и радиаторов</li>
+                        <li>Монтаж конструкций из ГКЛ</li>
+                        <li>Выравнивание стен и потолков</li>
+                        <li>Шпатлевание стен и потолков</li>
+                        <li>Замена чернового пола</li>
+                        <li>Облицовка санузлов керамической плиткой</li>
+                        <li>Установка санфаянса</li>
+                        <li>Окраска поверхностей</li>
+                        <li>Укладка напольных покрытий</li>
+                        <li>Установка межкомнатных дверей</li>
+                    </ul>
+                    <div class="service-price">от 25 000 ₽/м²</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Капитальный ремонт</h3>
+                    <p>Полная перепланировка с заменой всех инженерных систем</p>
+                    <ul>
+                        <li>Замена электрической проводки</li>
+                        <li>Замена сантехнических труб и радиаторов</li>
+                        <li>Монтаж конструкций из ГКЛ</li>
+                        <li>Выравнивание стен и потолков</li>
+                        <li>Шпатлевание стен и потолков</li>
+                        <li>Замена чернового пола</li>
+                        <li>Облицовка санузлов керамической плиткой</li>
+                        <li>Установка санфаянса</li>
+                        <li>Наклейка обоев, окраска поверхностей</li>
+                        <li>Укладка напольных покрытий</li>
+                        <li>Установка межкомнатных дверей</li>
+                    </ul>
+                    <div class="service-price">от 20 000 ₽/м²</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Дизайнерский ремонт</h3>
+                    <p>Визуальное оформление реальных и виртуальных объектов</p>
+                    <ul>
+                        <li>Перепланировка квартиры</li>
+                        <li>Новые инженерные сети</li>
+                        <li>Монтаж конструкций из ГКЛ</li>
+                        <li>Высококачественная подготовка поверхностей</li>
+                        <li>Декоративные штукатурки</li>
+                        <li>Облицовка санузлов керамической плиткой</li>
+                        <li>Наклейка обоев, окраска поверхностей</li>
+                        <li>Укладка напольных покрытий</li>
+                        <li>Авторский надзор</li>
+                        <li>Индивидуальный дизайн-проект</li>
+                    </ul>
+                    <div class="service-price">от 30 000 ₽/м²</div>
+                </div>
+
+                <!-- Новая услуга: Ремонт коттеджей -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Ремонт коттеджей</h3>
+                    <p>Комплексный ремонт загородных домов и коттеджей под ключ</p>
+                    <ul>
+                        <li>Замена электрической проводки</li>
+                        <li>Замена сантехнических труб и радиаторов</li>
+                        <li>Монтаж конструкций из ГКЛ</li>
+                        <li>Выравнивание стен и потолков</li>
+                        <li>Шпатлевание стен и потолков</li>
+                        <li>Облицовка санузлов керамической плиткой</li>
+                        <li>Установка санфаянса</li>
+                        <li>Наклейка обоев, окраска</li>
+                        <li>Укладка напольных покрытий</li>
+                        <li>Установка дверей</li>
+                    </ul>
+                    <div class="service-price">от 30 000 ₽/м²</div>
+                </div>
+
+                <!-- Новая услуга: Ремонт нежилых помещений -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Ремонт нежилых помещений</h3>
+                    <p>Профессиональный ремонт офисов, магазинов и коммерческих помещений</p>
+                    <ul>
+                        <li>Комплекс работ согласуется на месте объекта</li>
+                    </ul>
+                    <div class="service-price">от 18 000 ₽/м²</div>
+                </div>
+
+                <!-- Дополнительная карточка для симметрии -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Комплексные решения</h3>
+                    <p>Полный цикл работ от проектирования до сдачи объекта</p>
+                    <ul>
+                        <li>Бесплатный выезд и замер</li>
+                        <li>Разработка дизайн-проекта</li>
+                        <li>Составление детальной сметы</li>
+                        <li>Закупка и доставка материалов</li>
+                        <li>Выполнение всех видов работ</li>
+                        <li>Чистовая уборка после ремонта</li>
+                        <li>Авторский надзор</li>
+                        <li>Гарантийное обслуживание</li>
+                        <li>Консультация по эксплуатации</li>
+                    </ul>
+                    <div class="service-price">Индивидуальный расчет</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Фиксированная цена</h3>
+                    <p>Стоимость ремонта известна заранее и не меняется в процессе работ. Все прописано в договоре.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Дизайн-проект</h3>
+                    <p>Разработаем индивидуальный дизайн или доработаем ваш вариант. Учтем все пожелания.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Гарантия 3 года</h3>
+                    <p>Даем официальную гарантию на все виды работ. Ваш ремонт под надежной защитой.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Качественные материалы</h3>
+                    <p>Закупка и доставка материалов - наша забота. Работаем с проверенными поставщиками.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Опытные специалисты</h3>
+                    <p>В нашей команде работают мастера с опытом от 5 лет. Каждый - специалист в своей области.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Поэтапная оплата</h3>
+                    <p>Оплата по этапам работ после приемки. Прозрачная система без скрытых платежей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="capital">Капитальный</button>
+                <button class="filter-btn" data-filter="euro">Евроремонт</button>
+                <button class="filter-btn" data-filter="designer">Дизайнерский</button>
+                <button class="filter-btn" data-filter="cott">Ремонт коттеджей</button>
+                <button class="filter-btn" data-filter="commercial">Ремонт нежилых помещений</button>
+            </div>
+            <div class="portfolio-grid">
+
+                <!-- КАПИТАЛЬНЫЙ РЕМОНТ -->
+                 <!-- 1-комнатная 37 м² -->
+                <div class="portfolio-item" data-category="capital">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/capital/1room_37/1.png" alt="Капитальный ремонт 1-комнатной квартиры 37 м²">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/1room_37/1.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/1room_37/2.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/1room_37/3.png')"></div>
+                            <span class="gallery-count">+0</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>1-комнатная квартира</h3>
+                        <p>Капитальный ремонт, 37 м²</p>
+                        <span class="portfolio-category">Капитальный ремонт</span>
+                        <button class="view-gallery-btn" data-project="capital_1room_37">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- 2-комнатная 42 м² -->
+                <div class="portfolio-item" data-category="capital">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/capital/2room_42/1.png" alt="Капитальный ремонт 2-комнатной квартиры 42 м²">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/2room_42/1.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/2room_42/2.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/2room_42/3.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/2room_42/4.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/2room_42/5.png')"></div>
+                            <span class="gallery-count">+0</span>
+                     </div>
+                 </div>
+                 <div class="portfolio-info">
+                     <h3>2-комнатная квартира</h3>
+                     <p>Капитальный ремонт, 42 м²</p>
+                     <span class="portfolio-category">Капитальный ремонт</span>
+                     <button class="view-gallery-btn" data-project="capital_2room_42">Посмотреть все фото</button>
+                 </div>
+            </div>
+
+                <!-- 4-комнатная 72 м² -->
+                <div class="portfolio-item" data-category="capital">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/capital/4room_72/1.jpg" alt="Капитальный ремонт 4-комнатной квартиры 72 м²">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/4room_72/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/4room_72/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/capital/4room_72/3.jpg')"></div>
+                            <span class="gallery-count">+4</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>4-комнатная квартира</h3>
+                        <p>Капитальный ремонт, 72 м²</p>
+                        <span class="portfolio-category">Капитальный ремонт</span>
+                        <button class="view-gallery-btn" data-project="capital_4room_72">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- ЕВРОРЕМОНТ -->
+                <!-- 2-комнатная -->
+                <div class="portfolio-item" data-category="euro">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/euro/2room/1.jpg" alt="Евроремонт 2-комнатной квартиры">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/2room/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/2room/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/2room/3.jpg')"></div>
+                            <span class="gallery-count">+6</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>2-комнатная квартира</h3>
+                        <p>Евроремонт, 65 м²</p>
+                        <span class="portfolio-category">Евроремонт</span>
+                        <button class="view-gallery-btn" data-project="euro_2room">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- 3-комнатная -->
+                <div class="portfolio-item" data-category="euro">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/euro/3room/1.jpg" alt="Евроремонт 3-комнатной квартиры">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/3room/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/3room/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/3room/3.jpg')"></div>
+                            <span class="gallery-count">+1</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>3-комнатная квартира</h3>
+                        <p>Евроремонт, 85 м²</p>
+                        <span class="portfolio-category">Евроремонт</span>
+                        <button class="view-gallery-btn" data-project="euro_3room">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- 3-комнатная 56 м² -->
+                <div class="portfolio-item" data-category="euro">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/euro/3room_56/1.png" alt="Евроремонт 3-комнатной квартиры 56 м²">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/3room_56/1.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/3room_56/2.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/euro/3room_56/3.png')"></div>
+                            <span class="gallery-count">+3</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>3-комнатная квартира</h3>
+                        <p>Евроремонт, 56 м²</p>
+                        <span class="portfolio-category">Евроремонт</span>
+                        <button class="view-gallery-btn" data-project="euro_3room_56">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- РЕМОНТ НЕЖИЛЫХ ПОМЕЩЕНИЙ -->
+                <!-- Офисное помещение - Дизайн -->
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/commercial/office1/1.png" alt="Дизайн офисного помещения">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/commercial/office1/1.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/commercial/office1/2.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/commercial/office1/3.png')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/commercial/office1/4.png')"></div>
+                            <span class="gallery-count">+0</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Офисное помещение - Дизайн</h3>
+                        <p>Бизнес-центр, 120 м²</p>
+                        <span class="portfolio-category">Ремонт нежилых помещений</span>
+                        <div class="portfolio-note">
+                            <p><small>Пробная версия дизайна - проект в разработке</small></p>
+                        </div>
+                        <button class="view-gallery-btn" data-project="commercial_office1">Посмотреть концепцию</button>
+                    </div>
+                </div>
+
+                <!-- ДИЗАЙНЕРСКИЙ РЕМОНТ -->
+                <!-- 1-комнатная -->
+                <div class="portfolio-item" data-category="designer">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/designer/1room/1.jpg" alt="Дизайнерский ремонт 1-комнатной квартиры">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/1room/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/1room/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/1room/3.jpg')"></div>
+                            <span class="gallery-count">+5</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>1-комнатная квартира</h3>
+                        <p>Дизайнерский ремонт, 45 м²</p>
+                        <span class="portfolio-category">Дизайнерский ремонт</span>
+                        <button class="view-gallery-btn" data-project="designer_1room">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- 2-комнатная -->
+                <div class="portfolio-item" data-category="designer">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/designer/2room/1.jpg" alt="Дизайнерский ремонт 2-комнатной квартиры">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/2room/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/2room/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/2room/3.jpg')"></div>
+                            <span class="gallery-count">+8</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>2-комнатная квартира</h3>
+                        <p>Дизайнерский ремонт, 65 м²</p>
+                        <span class="portfolio-category">Дизайнерский ремонт</span>
+                        <button class="view-gallery-btn" data-project="designer_2room">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- 3-комнатная -->
+                <div class="portfolio-item" data-category="designer">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/designer/3room/1.jpg" alt="Дизайнерский ремонт 3-комнатной квартиры">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/3room/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/3room/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/designer/3room/3.jpg')"></div>
+                            <span class="gallery-count">+11</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>3-комнатная квартира</h3>
+                        <p>Дизайнерский ремонт, 90 м²</p>
+                        <span class="portfolio-category">Дизайнерский ремонт</span>
+                        <button class="view-gallery-btn" data-project="designer_3room">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- РЕМОНТ КОТТЕДЖЕЙ -->
+                <!-- Коттедж 140 м² -->
+                <div class="portfolio-item" data-category="cott">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/cott/140/1.jpg" alt="Ремонт коттеджа 140 м²">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/cott/140/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/cott/140/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/cott/140/3.jpg')"></div>
+                            <span class="gallery-count">+3</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Загородный коттедж</h3>
+                        <p>Коттеджный поселок, 140 м²</p>
+                        <span class="portfolio-category">Ремонт коттеджей</span>
+                        <button class="view-gallery-btn" data-project="cott_140">Посмотреть все фото</button>
+                    </div>
+                </div>
+
+                <!-- Коттедж 289 м² -->
+                <div class="portfolio-item" data-category="cott">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/cott/289/1.jpg" alt="Ремонт коттеджа 289 м²">
+                        <div class="portfolio-gallery">
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/cott/289/1.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/cott/289/2.jpg')"></div>
+                            <div class="gallery-thumb" style="background-image: url('images/portfolio/cott/289/3.jpg')"></div>
+                            <span class="gallery-count">+4</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Загородный коттедж</h3>
+                        <p>Элитный поселок, 289 м²</p>
+                        <span class="portfolio-category">Ремонт коттеджей</span>
+                        <button class="view-gallery-btn" data-project="cott_289">Посмотреть все фото</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно галереи -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content gallery-modal">
+            <span class="close">&times;</span>
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <img id="galleryMainImage" src="" alt="">
+                    <button class="gallery-nav gallery-prev">‹</button>
+                    <button class="gallery-nav gallery-next">›</button>
+                </div>
+                <div class="gallery-thumbs">
+                    <!-- Миниатюры будут добавляться через JavaScript -->
+                </div>
+                <div class="gallery-info">
+                    <h3 id="galleryTitle"></h3>
+                    <p id="galleryDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Консультация и замер</h3>
+                    <p>Бесплатный выезд специалиста, замер помещения и консультация</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Составление сметы</h3>
+                    <p>Подготовка детальной сметы с фиксированной ценой</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Заключение договора</h3>
+                    <p>Подписание договора с гарантией и поэтапной оплатой</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Выполнение работ</h3>
+                    <p>Качественное выполнение ремонта в установленные сроки</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3>Сдача объекта</h3>
+                    <p>Приемка работы и подписание акта сдачи-приемки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Контакты</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <a href="tel:+78005005555">+7 (988) 755-15-82</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@proremont.ru">antonyan.stroy@yandex.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00 - 20:00<br>Сб-Вс: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Остались вопросы?</h2>
+                    <form class="message-form" action="https://formspree.io/f/xblqkrlj" method="POST">
+                        <input type="hidden" name="_subject" value="Вопрос с сайта ProRemont">
+                        <input type="hidden" name="_language" value="ru">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                        <textarea name="message" placeholder="Ваш вопрос" rows="5" required></textarea>
+                        <button type="submit">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A-X Group</h3>
+                    <p>Профессиональный ремонт квартир в Москве и области. Гарантия качества 3 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#services">Капитальный ремонт</a></li>
+                        <li><a href="#services">Евроремонт</a></li>
+                        <li><a href="#services">Дизайнерский ремонт</a></li>
+                        <li><a href="#services">Ремонт коттеджей</a></li>
+                        <li><a href="#services">Ремонт нежилых помещений</a></li>                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#main">О нас</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="footer-contacts">
+                        <p><i class="fas fa-phone"></i> +7 (988) 755-15-82</p>
+                        <p><i class="fas fa-envelope"></i> antonyan.stroy@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 A-X Group. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div class="modal" id="consultationModal">
+        <div class="modal-content consultation-modal">
+            <span class="close">&times;</span>
+            <h2>Получите бесплатную консультацию и расчет стоимости</h2>
+            <form class="consultation-form modal-form" action="https://formspree.io/f/mnnlzaan" method="POST">
+                <input type="hidden" name="_subject" value="Заявка из модального окна ProRemont">
+                <input type="hidden" name="_language" value="ru">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-row">
+                    <select name="repair_type" required>
+                        <option value="" disabled selected>Тип ремонта</option>
+                        <option value="capital">Капитальный</option>
+                        <option value="euro">Евроремонт</option>
+                        <option value="designer">Дизайнерский</option>
+                        <option value="cott">Ремонт коттеджей</option>
+                        <option value="commercial">Ремонт нежилых помещений</option>
+                    </select>
+                    <select name="area" required>
+                        <option value="" disabled selected>Площадь помещения</option>
+                        <option value="30">до 30 м²</option>
+                        <option value="50">30-50 м²</option>
+                        <option value="80">50-80 м²</option>
+                        <option value="100">80-100 м²</option>
+                        <option value="100+">свыше 100 м²</option>
+                    </select>
+                </div>
+                <div class="form-row single">
+                    <select name="materials" required>
+                        <option value="" disabled selected>Нужны ли материалы</option>
+                        <option value="with_materials">Да, с материалами</option>
+                        <option value="without_materials">Нет, без материалов</option>
+                        <option value="consult">Нужна консультация</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Получить расчет</button>
+                <p class="form-note">Наш менеджер свяжется с вами в течение 15 минут</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
